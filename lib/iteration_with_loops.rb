@@ -5,7 +5,7 @@ def find_min_in_nested_arrays(src)
   row_index = 0 
   while row_index < src.count do
     element_index = 0
-    row_min = 1000000
+    row_min = 999999999999999
       while element_index < src[row_index].count do
         if src[row_index][element_index] < row_min
            row_min = src[row_index][element_index]
@@ -15,5 +15,5 @@ def find_min_in_nested_arrays(src)
       array_of_mins.push(row_min)
       row_index += 1
   end
-  p array_of_mins
+array_of_mins
 end
